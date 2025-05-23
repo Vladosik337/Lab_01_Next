@@ -1,0 +1,88 @@
+/* [project]/app/page.module.scss.module.css [app-client] (css) */
+.page-module-scss-module__qnDekq__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 4rem);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.page-module-scss-module__qnDekq__content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (width >= 768px) {
+  .page-module-scss-module__qnDekq__content {
+    padding: 0 2rem;
+  }
+}
+
+.page-module-scss-module__qnDekq__title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #fff, #ee97f4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #0000;
+  animation: .8s ease-out page-module-scss-module__qnDekq__fadeIn;
+}
+
+.page-module-scss-module__qnDekq__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.page-module-scss-module__qnDekq__buttonPrimary, .page-module-scss-module__qnDekq__buttonSecondary {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+  padding: 1rem 2rem;
+  border-radius: .375rem;
+  font-weight: 500;
+}
+
+.page-module-scss-module__qnDekq__buttonPrimary {
+  background-color: #de3bea;
+  color: #fff;
+}
+
+.page-module-scss-module__qnDekq__buttonPrimary:hover {
+  background-color: #cd17db;
+  transform: translateY(-1px);
+}
+
+.page-module-scss-module__qnDekq__buttonPrimary:active {
+  transform: translateY(0);
+}
+
+.page-module-scss-module__qnDekq__buttonSecondary {
+  background-color: #2a2a2a;
+  color: #fffc;
+}
+
+.page-module-scss-module__qnDekq__buttonSecondary:hover {
+  background-color: #373737;
+  color: #fff;
+}
+
+@keyframes page-module-scss-module__qnDekq__fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=app_page_module_scss_module_b52d8e88.css.map*/

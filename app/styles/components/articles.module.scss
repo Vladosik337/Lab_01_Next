@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use 'sass:color';
+
+.header {
+  margin-block-end: $spacing-xl;
+
+  h1 {
+    @include heading-1;
+    color: white;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset-block-end: -0.5rem;
+      inset-inline-start: 0;
+      inline-size: 2em;
+      block-size: 4px;
+      background: linear-gradient(
+                      to right,
+                      $color-accent,
+                      color.lighten($color-accent, 20%)
+      );
+      border-radius: $radius-sm;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-gap: $spacing-lg;
+  grid-template-columns: 100%;
+
+  @include tablet {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include laptop {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
